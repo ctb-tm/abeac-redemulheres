@@ -15,7 +15,6 @@
   }
   body{margin:0;background:var(--bg);color:var(--text);line-height:1.65}
 
-  /* Cabeçalho */
   header{
     display:flex;align-items:center;gap:20px;padding:22px;border-bottom:4px solid var(--orange);
     background:#fff;
@@ -23,11 +22,9 @@
   header img{height:80px}
   header h1{margin:0;font-weight:900;color:var(--blue);font-size:26px}
 
-  /* Hero */
   .hero{width:100%;text-align:center;background:#000}
   .hero img{width:100%;max-height:560px;object-fit:cover}
 
-  /* Conteúdo */
   section{max-width:1150px;margin:auto;padding:40px 22px}
   h2{color:var(--blue);font-weight:900;border-left:8px solid var(--orange);padding-left:12px;margin-top:0}
   h3{color:var(--orange);font-weight:800}
@@ -40,7 +37,11 @@
     margin-bottom:24px;
   }
 
-  /* Valor Final */
+  table{width:100%;border-collapse:collapse;margin-top:20px}
+  table th, table td{padding:12px;border:1px solid #cccccc;font-size:16px}
+  table th{background:var(--blue);color:#fff;text-align:left}
+  .row-blue{background:rgba(0,51,255,0.05)}  /* Azul 5% */
+
   .footer-value{
     background:var(--blue);
     color:#fff;
@@ -61,124 +62,141 @@
 
 <body>
 
-<!-- ======================== CABEÇALHO ======================== -->
 <header>
   <img src="abeac.png" alt="ABEAC Logo">
   <h1>Projeto Mulheres da Ribeira 4.0<br>Rede de Empreendedorismo Feminino e Inovação</h1>
 </header>
 
-<!-- ======================== IMAGEM DE ABERTURA ======================== -->
 <section class="hero">
   <img src="abeac1.jpg" alt="Imagem Institucional ABEAC – Mulheres da Ribeira 4.0">
 </section>
 
 <div class="container">
 
-<!-- ======================== SOBRE A ABEAC ======================== -->
 <section>
   <h2>Sobre a ABEAC</h2>
   <div class="card">
-    <p>A <strong>Associação Beneficente Educação Arte e Cidadania (ABEAC)</strong> é uma instituição social localizada na Península de Itapagipe, no bairro da Ribeira, em Salvador/BA. Há mais de uma década, a ABEAC desenvolve ações socioculturais voltadas para crianças, adolescentes, adultos, idosos e pessoas com deficiência, fortalecendo laços comunitários, ampliando oportunidades e promovendo cidadania.</p>
-
-    <p>A ABEAC se tornou um polo de referência social na região dos Alagados e da Ribeira, oferecendo aulas esportivas, ginástica, dança, atividades de convivência, apoio comunitário e ações de desenvolvimento humano. Seu trabalho contínuo consolida a instituição como um espaço de acolhimento, criatividade e formação de redes de solidariedade.</p>
-
-    <p>Com forte capacidade de mobilização e credibilidade comunitária, a ABEAC expande agora sua atuação para o empreendedorismo feminino, tecnologia aplicada e formação cidadã, conectando inovação ao desenvolvimento territorial.</p>
+    <p>A Associação Beneficente Educação Arte e Cidadania (ABEAC) é uma instituição social localizada na Península de Itapagipe, no bairro da Ribeira, em Salvador/BA. Desenvolve ações socioculturais para crianças, jovens, adultos e idosos, fortalecendo cidadania e vínculos comunitários.</p>
+    <p>Reconhecida como referência, oferece atividades esportivas, dança, ginástica, projetos de inclusão produtiva e ações formativas. A ABEAC agora amplia sua atuação com projetos de inovação, empreendedorismo feminino e tecnologia aplicada.</p>
   </div>
 </section>
 
-<!-- ======================== SOBRE O PROJETO ======================== -->
 <section>
   <h2>O Projeto Mulheres da Ribeira 4.0</h2>
   <div class="card">
-    <p>O <strong>Projeto Mulheres da Ribeira 4.0</strong> foi desenvolvido para potencializar a autonomia econômica de mulheres de Salvador e de mais sete municípios estratégicos do estado da Bahia. Através de capacitações, oficinas práticas, feiras presenciais, acompanhamento contínuo e uso de ferramentas modernas de comunicação e criação digital, o projeto cria uma rede de apoio colaborativa e inovadora.</p>
-
-    <p>O foco central é gerar oportunidades reais de renda, ampliar o acesso ao empreendedorismo e fortalecer a identidade produtiva das mulheres atendidas. A iniciativa conecta economia criativa, inovação, redes comunitárias e estratégias modernas de vendas e divulgação.</p>
-
+    <p>O Projeto Mulheres da Ribeira 4.0 tem como foco gerar autonomia econômica para mulheres por meio de formação, feiras, uso de ferramentas digitais e integração em rede. A iniciativa conecta inovação social, economia criativa e empreendedorismo feminino.</p>
     <h3>Objetivos do Projeto</h3>
     <ul>
-      <li>Capacitar <strong>400 mulheres</strong> ao longo de 8 meses.</li>
-      <li>Realizar <strong>10 feiras</strong> de exposição e comercialização de produtos.</li>
-      <li>Oferecer formação presencial (8h) + formação digital/IA (4h).</li>
-      <li>Fortalecer redes locais de produção, artesanato e serviços.</li>
-      <li>Expandir a presença digital das empreendedoras.</li>
-      <li>Gerar aumento real de renda e autonomia financeira.</li>
+      <li>Capacitar 400 mulheres em 8 municípios da Bahia.</li>
+      <li>Realizar 10 feiras de exposição e vendas.</li>
+      <li>Oferecer formação presencial e formação digital especializada.</li>
+      <li>Promover formalização, aumento de renda e redes produtivas.</li>
     </ul>
   </div>
 </section>
 
-<!-- ======================== METODOLOGIA ======================== -->
 <section>
   <h2>Metodologia</h2>
   <div class="card">
-    <p>A metodologia foi construída para garantir resultados práticos, com aprendizagem acessível, acompanhamento estruturado e ferramentas modernas para impulsionar o crescimento econômico das mulheres.</p>
-
-    <h3>Eixos de Trabalho</h3>
+    <p>A metodologia combina formação teórica e prática, apoio técnico contínuo, uso de ferramentas digitais e execução territorial coordenada.</p>
     <ul>
-      <li><strong>Capacitações Presenciais</strong> – 8 horas de formação em gestão, vendas, formalização e comunicação.</li>
-      <li><strong>Capacitação Digital</strong> – 4 horas de ferramentas práticas para criação de conteúdo, campanhas e catálogos.</li>
-      <li><strong>Acompanhamento Técnico</strong> – monitoramento contínuo e suporte administrativo e comercial.</li>
-      <li><strong>Feiras e Mostras</strong> – estrutura completa para exposição dos produtos das alunas.</li>
-      <li><strong>Rede Digital</strong> – plataforma colaborativa para apoio, divulgação e vendas.</li>
+      <li>Capacitações Presenciais (8h)</li>
+      <li>Formação Digital (4h)</li>
+      <li>Acompanhamento Técnico (8 meses)</li>
+      <li>Feiras de Produtos e Serviços (10 edições)</li>
+      <li>Rede Digital de Apoio</li>
     </ul>
-
-    <p>Essas ações acontecem de forma integrada, criando um ciclo de formação, prática, acompanhamento e fortalecimento da autonomia feminina.</p>
   </div>
 </section>
 
-<!-- ======================== MUNICÍPIOS ======================== -->
 <section>
   <h2>Municípios Atendidos</h2>
   <div class="card">
-    <p>O projeto será executado nos seguintes municípios:</p>
-    <ul>
-      <li>Salvador (Base Operacional – ABEAC Ribeira)</li>
-      <li>Camaçari</li>
-      <li>Lauro de Freitas</li>
-      <li>Vitória da Conquista</li>
-      <li>Juazeiro</li>
-      <li>Senhor do Bonfim</li>
-      <li>Barreiras</li>
-      <li>Itabuna</li>
-    </ul>
+    <p>Salvador (base), Camaçari, Lauro de Freitas, Vitória da Conquista, Juazeiro, Senhor do Bonfim, Barreiras e Itabuna.</p>
   </div>
 </section>
 
-<!-- ======================== LOGÍSTICA ======================== -->
 <section>
   <h2>Logística Operacional</h2>
   <div class="card">
-    <p>Para garantir eficiência, economia e qualidade em todas as etapas, foi estruturada uma logística integrada com:</p>
-
     <ul>
-      <li><strong>Veículo utilitário locado por 8 meses</strong> para transporte de materiais, kits, som, banners e equipe.</li>
-      <li><strong>Supervisor(a) de Polos</strong> responsável por visitas técnicas, execução territorial e suporte.</li>
-      <li>Rotas otimizadas para municípios distantes (Barreiras, Conquista, Juazeiro).</li>
-      <li>Base de armazenamento e coordenação na sede da ABEAC – Ribeira.</li>
-      <li>Equipe técnica fixa + equipe itinerante para eventos.</li>
+      <li>Veículo utilitário locado por 8 meses.</li>
+      <li>Supervisor(a) de polos itinerante.</li>
+      <li>Rotas otimizadas para regiões distantes.</li>
+      <li>Centro logístico na sede da ABEAC.</li>
+      <li>Equipe técnica e operacional especializada.</li>
     </ul>
   </div>
 </section>
 
-<!-- ======================== IMPACTO ======================== -->
 <section>
   <h2>Impacto Social Esperado</h2>
   <div class="card">
     <ul>
       <li>400 mulheres capacitadas.</li>
       <li>10 feiras realizadas.</li>
-      <li>Rede digital com mais de 500 participantes.</li>
-      <li>Aumento da renda familiar e formalização de empreendedoras.</li>
-      <li>Fortalecimento do território da Ribeira como polo de inovação.</li>
+      <li>Rede digital formada com mais de 500 participantes.</li>
+      <li>Ampliação da renda e formalização profissional.</li>
+      <li>Fortalecimento da economia local e territorial.</li>
     </ul>
+  </div>
+</section>
+
+<!-- ======================== NOVA SEÇÃO – ORÇAMENTO RESUMIDO ======================== -->
+<section>
+  <h2>Orçamento Resumido do Projeto</h2>
+  <div class="card">
+    <p>Abaixo está o resumo do orçamento final corrigido conforme o valor de referência estabelecido pelo Edital SETRE Nº 014/2025.</p>
+
+    <table>
+      <tr>
+        <th>Item</th>
+        <th>Valor (R$)</th>
+      </tr>
+
+      <tr class="row-blue">
+        <td>Capacitação Especializada (400 alunas / 8h)</td>
+        <td>115.200,00</td>
+      </tr>
+
+      <tr>
+        <td>Coordenação Geral (8 meses)</td>
+        <td>57.600,00</td>
+      </tr>
+
+      <tr class="row-blue">
+        <td>Coordenação Pedagógica (8 meses)</td>
+        <td>40.800,00</td>
+      </tr>
+
+      <tr>
+        <td>Técnico Administrativo (3 profissionais / 8 meses)</td>
+        <td>43.200,00</td>
+      </tr>
+
+      <tr class="row-blue">
+        <td>Técnico de TI (8 meses)</td>
+        <td>32.382,80</td>
+      </tr>
+
+      <tr>
+        <td>Contratação de Bens e Serviços (Feiras, materiais, logística)</td>
+        <td>143.156,43</td>
+      </tr>
+
+      <tr class="row-blue">
+        <th>Total Geral</th>
+        <th>R$ 432.339,23</th>
+      </tr>
+    </table>
   </div>
 </section>
 
 </div>
 
-<!-- ======================== VALOR FINAL ======================== -->
 <div class="footer-value">
   <h2>VALOR TOTAL DO PROJETO</h2>
-  <h1>R$ 687.400,00</h1>
+  <h1>R$ 432.339,23</h1>
 </div>
 
 </body>
