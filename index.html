@@ -3,54 +3,183 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>ABEAC – Projeto Mulheres da Ribeira 4.0 | Web 3.0</title>
+<title>ABEAC – Projeto Mulheres da Ribeira 4.0 | Site Institucional</title>
+
 <style>
   :root{
-    --blue:#0033ff;
-    --orange:#ff7b00;
+    --blue:#0033ff;          /* Azul 100% */
+    --orange:#ff7b00;        /* Laranja destaque */
     --bg:#ffffff;
     --text:#0033ff;
     font-family:"Inter",system-ui,Arial,sans-serif;
   }
-  body{margin:0;background:var(--bg);color:var(--text);line-height:1.6}
+  body{margin:0;background:var(--bg);color:var(--text);line-height:1.65}
+
+  /* Cabeçalho */
   header{
-    display:flex;align-items:center;gap:16px;padding:18px;border-bottom:4px solid var(--orange);
+    display:flex;align-items:center;gap:20px;padding:22px;border-bottom:4px solid var(--orange);
+    background:#fff;
   }
-  header img{height:70px}
-  header h1{margin:0;font-weight:800;color:var(--blue)}
+  header img{height:80px}
+  header h1{margin:0;font-weight:900;color:var(--blue);font-size:26px}
+
+  /* Hero */
   .hero{width:100%;text-align:center;background:#000}
-  .hero img{width:100%;max-height:500px;object-fit:cover}
-  section{max-width:1100px;margin:auto;padding:32px 20px}
-  h2{color:var(--blue);font-weight:900;border-left:6px solid var(--orange);padding-left:10px}
-  h3{color:var(--orange)}
-  .card{border:2px solid var(--orange);padding:20px;border-radius:12px;margin-bottom:18px}
-  .footer-value{background:var(--blue);color:#fff;padding:60px 20px;text-align:center}
-  .footer-value h1{font-size:60px;margin:0;color:var(--orange)}
+  .hero img{width:100%;max-height:560px;object-fit:cover}
+
+  /* Conteúdo */
+  section{max-width:1150px;margin:auto;padding:40px 22px}
+  h2{color:var(--blue);font-weight:900;border-left:8px solid var(--orange);padding-left:12px;margin-top:0}
+  h3{color:var(--orange);font-weight:800}
+
+  .card{
+    border:2px solid var(--orange);
+    padding:26px;
+    border-radius:14px;
+    background:#fff;
+    margin-bottom:24px;
+  }
+
+  /* Valor Final */
+  .footer-value{
+    background:var(--blue);
+    color:#fff;
+    padding:80px 20px;
+    text-align:center;
+  }
+  .footer-value h1{
+    font-size:68px;
+    margin:0;
+    color:var(--orange);
+    font-weight:900;
+  }
+  .footer-value h2{
+    margin:0 0 18px;font-size:32px;font-weight:700;color:#e8ecff;
+  }
 </style>
 </head>
+
 <body>
+
+<!-- ======================== CABEÇALHO ======================== -->
 <header>
   <img src="abeac.png" alt="ABEAC Logo">
-  <h1>Projeto Mulheres da Ribeira 4.0</h1>
+  <h1>Projeto Mulheres da Ribeira 4.0<br>Rede de Empreendedorismo Feminino e Inovação</h1>
 </header>
-<div class="hero"><img src="abeac1.jpg"></div>
+
+<!-- ======================== IMAGEM DE ABERTURA ======================== -->
+<section class="hero">
+  <img src="abeac1.jpg" alt="Imagem Institucional ABEAC – Mulheres da Ribeira 4.0">
+</section>
+
+<div class="container">
+
+<!-- ======================== SOBRE A ABEAC ======================== -->
 <section>
-  <h2>Sobre o Projeto</h2>
+  <h2>Sobre a ABEAC</h2>
   <div class="card">
-    <p>O Projeto Mulheres da Ribeira 4.0 é uma iniciativa Web 3.0 da ABEAC focada em inovação social, tecnologia descentralizada e capacitação feminina. Integrando economia criativa, inteligência artificial e experiências imersivas, o projeto forma uma rede digital de empreendedoras com presença física nos territórios e atuação expandida em plataformas conectadas.</p>
-  </div>
-  <h2>Metodologia</h2>
-  <div class="card">
-    <p>A metodologia Web 3.0 utiliza ambientes colaborativos, conteúdos dinâmicos, identidade descentralizada e modelos digitais integrados. As participantes acessam trilhas formativas híbridas, IA aplicada, ferramentas de criação acelerada e suporte contínuo com sincronização automática entre dispositivos e microambientes digitais.</p>
-  </div>
-  <h2>Municípios</h2>
-  <div class="card">
-    <p>Salvador (base), Camaçari, Lauro de Freitas, Vitória da Conquista, Juazeiro, Senhor do Bonfim, Barreiras e Itabuna. Cada território atua como um nó da rede colaborativa, conectado por protocolos digitais de capacitação, acompanhamento e feiras híbridas.</p>
+    <p>A <strong>Associação Beneficente Educação Arte e Cidadania (ABEAC)</strong> é uma instituição social localizada na Península de Itapagipe, no bairro da Ribeira, em Salvador/BA. Há mais de uma década, a ABEAC desenvolve ações socioculturais voltadas para crianças, adolescentes, adultos, idosos e pessoas com deficiência, fortalecendo laços comunitários, ampliando oportunidades e promovendo cidadania.</p>
+
+    <p>A ABEAC se tornou um polo de referência social na região dos Alagados e da Ribeira, oferecendo aulas esportivas, ginástica, dança, atividades de convivência, apoio comunitário e ações de desenvolvimento humano. Seu trabalho contínuo consolida a instituição como um espaço de acolhimento, criatividade e formação de redes de solidariedade.</p>
+
+    <p>Com forte capacidade de mobilização e credibilidade comunitária, a ABEAC expande agora sua atuação para o empreendedorismo feminino, tecnologia aplicada e formação cidadã, conectando inovação ao desenvolvimento territorial.</p>
   </div>
 </section>
+
+<!-- ======================== SOBRE O PROJETO ======================== -->
+<section>
+  <h2>O Projeto Mulheres da Ribeira 4.0</h2>
+  <div class="card">
+    <p>O <strong>Projeto Mulheres da Ribeira 4.0</strong> foi desenvolvido para potencializar a autonomia econômica de mulheres de Salvador e de mais sete municípios estratégicos do estado da Bahia. Através de capacitações, oficinas práticas, feiras presenciais, acompanhamento contínuo e uso de ferramentas modernas de comunicação e criação digital, o projeto cria uma rede de apoio colaborativa e inovadora.</p>
+
+    <p>O foco central é gerar oportunidades reais de renda, ampliar o acesso ao empreendedorismo e fortalecer a identidade produtiva das mulheres atendidas. A iniciativa conecta economia criativa, inovação, redes comunitárias e estratégias modernas de vendas e divulgação.</p>
+
+    <h3>Objetivos do Projeto</h3>
+    <ul>
+      <li>Capacitar <strong>400 mulheres</strong> ao longo de 8 meses.</li>
+      <li>Realizar <strong>10 feiras</strong> de exposição e comercialização de produtos.</li>
+      <li>Oferecer formação presencial (8h) + formação digital/IA (4h).</li>
+      <li>Fortalecer redes locais de produção, artesanato e serviços.</li>
+      <li>Expandir a presença digital das empreendedoras.</li>
+      <li>Gerar aumento real de renda e autonomia financeira.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ======================== METODOLOGIA ======================== -->
+<section>
+  <h2>Metodologia</h2>
+  <div class="card">
+    <p>A metodologia foi construída para garantir resultados práticos, com aprendizagem acessível, acompanhamento estruturado e ferramentas modernas para impulsionar o crescimento econômico das mulheres.</p>
+
+    <h3>Eixos de Trabalho</h3>
+    <ul>
+      <li><strong>Capacitações Presenciais</strong> – 8 horas de formação em gestão, vendas, formalização e comunicação.</li>
+      <li><strong>Capacitação Digital</strong> – 4 horas de ferramentas práticas para criação de conteúdo, campanhas e catálogos.</li>
+      <li><strong>Acompanhamento Técnico</strong> – monitoramento contínuo e suporte administrativo e comercial.</li>
+      <li><strong>Feiras e Mostras</strong> – estrutura completa para exposição dos produtos das alunas.</li>
+      <li><strong>Rede Digital</strong> – plataforma colaborativa para apoio, divulgação e vendas.</li>
+    </ul>
+
+    <p>Essas ações acontecem de forma integrada, criando um ciclo de formação, prática, acompanhamento e fortalecimento da autonomia feminina.</p>
+  </div>
+</section>
+
+<!-- ======================== MUNICÍPIOS ======================== -->
+<section>
+  <h2>Municípios Atendidos</h2>
+  <div class="card">
+    <p>O projeto será executado nos seguintes municípios:</p>
+    <ul>
+      <li>Salvador (Base Operacional – ABEAC Ribeira)</li>
+      <li>Camaçari</li>
+      <li>Lauro de Freitas</li>
+      <li>Vitória da Conquista</li>
+      <li>Juazeiro</li>
+      <li>Senhor do Bonfim</li>
+      <li>Barreiras</li>
+      <li>Itabuna</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ======================== LOGÍSTICA ======================== -->
+<section>
+  <h2>Logística Operacional</h2>
+  <div class="card">
+    <p>Para garantir eficiência, economia e qualidade em todas as etapas, foi estruturada uma logística integrada com:</p>
+
+    <ul>
+      <li><strong>Veículo utilitário locado por 8 meses</strong> para transporte de materiais, kits, som, banners e equipe.</li>
+      <li><strong>Supervisor(a) de Polos</strong> responsável por visitas técnicas, execução territorial e suporte.</li>
+      <li>Rotas otimizadas para municípios distantes (Barreiras, Conquista, Juazeiro).</li>
+      <li>Base de armazenamento e coordenação na sede da ABEAC – Ribeira.</li>
+      <li>Equipe técnica fixa + equipe itinerante para eventos.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ======================== IMPACTO ======================== -->
+<section>
+  <h2>Impacto Social Esperado</h2>
+  <div class="card">
+    <ul>
+      <li>400 mulheres capacitadas.</li>
+      <li>10 feiras realizadas.</li>
+      <li>Rede digital com mais de 500 participantes.</li>
+      <li>Aumento da renda familiar e formalização de empreendedoras.</li>
+      <li>Fortalecimento do território da Ribeira como polo de inovação.</li>
+    </ul>
+  </div>
+</section>
+
+</div>
+
+<!-- ======================== VALOR FINAL ======================== -->
 <div class="footer-value">
   <h2>VALOR TOTAL DO PROJETO</h2>
-  <h1>R$ 599.800,00</h1>
+  <h1>R$ 687.400,00</h1>
 </div>
+
 </body>
 </html>
